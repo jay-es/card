@@ -4,7 +4,7 @@
     "html"
   ],
   "rules": {
-    indent: [2, 'tab'],
+    # indent: [2, 'tab'],
     comma-dangle: ["error", "only-multiline"],
     max-len: 0,
     no-multiple-empty-lines: 0,
