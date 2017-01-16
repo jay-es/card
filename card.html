@@ -1,0 +1,20 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>cart Vue</title>
+	<link rel="stylesheet" href="./card.css">
+</head>
+<body>
+	<div id="app" v-cloak>
+		<p>{{ clickNum }} Clicks</p>
+		<div class="card" v-for="(item, index) in cards" v-on:click="openCard(index)"
+				v-bind:class="{ 'is-done': item.isDone, 'is-opened': item.isOpened }">
+			{{ item.isOpened ? item.value : '' }}
+		</div>
+	</div>
+
+	<!-- <script src="https://unpkg.com/vue/dist/vue.js"></script> -->
+	<script src="./vue.js"></script>
+	<script src="./card.js"></script>
+</body>
+</html>

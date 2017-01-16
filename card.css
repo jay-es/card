@@ -1,0 +1,23 @@
+[v-cloak] {
+	display: none;
+}
+.card {
+	display: inline-block;
+	margin: 10px;
+	border: 1px solid #666;
+	border-radius: 4px;
+	background-color: #69f;
+	width: 40px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	vertical-align: text-bottom;
+	cursor: pointer;
+}
+.card.is-opened {
+	background-color: #fff;
+}
+.card.is-done {
+	background-color: #ccc;
+	pointer-events: none;
+}

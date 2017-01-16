@@ -1,0 +1,28 @@
+{
+  "extends": "airbnb/legacy",
+  "plugins": [
+    "html"
+  ],
+  "rules": {
+    "indent": [2, 'tab'],
+    # "react/jsx-indent": [2, 'tab'],
+    # "react/jsx-indent-props": [2, 'tab'],
+    comma-dangle: ["error", "only-multiline"],
+    # semi: ["warn", "always", { "omitLastInOneLineBlock": true}],
+    max-len: 0,
+    no-multiple-empty-lines: 0,
+    no-unused-vars: [2, { "args": "none" }],
+    no-param-reassign: ["error", { "props": false }],
+    no-trailing-spaces: 0,
+
+    func-names: 0,
+    no-use-before-define: [2, { "functions": false }],
+    vars-on-top: 0,
+  },
+  globals: {
+    $,
+    testSpeed,
+    Door,
+    Vue,
+  },
+}
